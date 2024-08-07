@@ -134,7 +134,6 @@ public class SecurityConfiguration {
             logger.info("Loading OAuth2User");
             OAuth2User oauth2User = delegate.loadUser(userRequest);
             logger.debug("Loaded OAuth2User: {}", oauth2User.getName());
-            // Bạn có thể thêm logic tùy chỉnh ở đây nếu cần
             return oauth2User;
         };
     }
